@@ -12,3 +12,11 @@ target_include_directories(01-hello-window PUBLIC
   ${GL_INCLUDE_DIRS}
   ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(01-hello-window dl ${GL_LDFLAGS})
+
+add_executable(02-hello-triangle
+  src/glad.c
+  src/02-hello-triangle.c)
+target_include_directories(02-hello-triangle PUBLIC
+  ${GL_INCLUDE_DIRS}
+  ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_link_libraries(02-hello-triangle dl ${GL_LDFLAGS})
