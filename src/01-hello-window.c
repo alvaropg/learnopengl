@@ -9,6 +9,7 @@ const unsigned int WINDOW_HEIGHT = 600;
 void
 framebuffer_size_callback(__attribute__ ((unused)) GLFWwindow *window, int width, int height)
 {
+    printf("Changing viewport to %dx%d\n", width, height);
     glViewport(0, 0, width, height);
 }
 
